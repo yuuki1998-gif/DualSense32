@@ -1,0 +1,7 @@
+# Nothing generated belongs in here.
+build/
+*.bin
+*.elf
+
+# Kept locally for reference, not published.
+CHANGES.md

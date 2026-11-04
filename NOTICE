@@ -1,0 +1,58 @@
+DualSense32
+Copyright 2026 yuuki1998
+
+Licensed under the PolyForm Noncommercial License 1.0.0. See LICENSE for
+the full terms, or https://polyformproject.org/licenses/noncommercial/1.0.0
+
+Required Notice: Copyright 2026 yuuki1998 (https://github.com/yuuki1998-gif/DualSense32)
+
+This licence covers noncommercial purposes only: personal study, hobby
+and research projects, and use by schools and other noncommercial
+organisations, such as a school robot club entering a student contest.
+Commercial use is not covered; ask the author about a separate licence.
+Anyone passing it on must include these terms (or their URL) and the
+Required Notice line above, plus LICENSES/Apache-2.0.txt for the files
+listed below.
+
+--------------------------------------------------------------------------
+Third-party material
+--------------------------------------------------------------------------
+
+src/stack/*.h and src/osi/allocator.h
+
+    Excerpts from the Bluedroid Bluetooth stack, as shipped in Espressif's
+    ESP-IDF. Only the declarations this library calls are present; each file
+    keeps its original notice.
+
+    Copyright (C) 1999-2012 Broadcom Corporation
+    Copyright (C) 2014 Google, Inc.
+    Licensed under the Apache License, Version 2.0; the full text is in
+    LICENSES/Apache-2.0.txt. These files stay under Apache-2.0, not under
+    the PolyForm licence that covers the rest of this library.
+
+    These headers are needed only by src/ds_bt_bluedroid.c, the original-
+    ESP32 link. The dongle and wired routes do not touch them.
+
+--------------------------------------------------------------------------
+Acknowledgements — no code taken
+--------------------------------------------------------------------------
+
+The adaptive trigger byte packing follows the format described by Nielk1's
+TriggerEffectGenerator:
+
+    https://gist.github.com/Nielk1/6d54cc2c00d2201ccb8c2720ad7538db
+
+What was used is the wire format — which mode byte, which zone bits, where
+the active-zone mask sits — which this library implements independently in C
+and verifies against test vectors transcribed separately in Python. No source
+was copied.
+
+Report layouts, the CRC32 seed and the feature reports were worked out from
+the Linux kernel's hid-playstation driver, the DS4Windows and pydualsense
+projects, and public protocol notes, then checked against a real controller.
+Where the sources disagreed, hardware decided. VERIFICATION.md records which
+claim rests on which measurement.
+
+DualSense, DualShock and PlayStation are trademarks of Sony Interactive
+Entertainment Inc. This project is not affiliated with, authorised by, or
+endorsed by Sony.
