@@ -62,7 +62,7 @@ ESP32-S3 / C3 / C6 / H2 には **Bluetooth Classic の無線が載っていま�
 
 ## 2. インストール
 
-配布 ZIP（`DualSense32-1.6.0.zip`）を展開して、`DualSense32` フォルダを丸ごと置きます。
+配布 ZIP（`DualSense32-1.7.0.zip`）を展開して、`DualSense32` フォルダを丸ごと置きます。
 
 | OS | 置き場所 |
 |---|---|

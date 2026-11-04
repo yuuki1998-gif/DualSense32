@@ -95,7 +95,7 @@ that pad in hand. Untested rather than known broken.
 
 ### 2-1. Unzip the release
 
-Unzipping the distributed `DualSense32-1.6.0.zip` gives you this:
+Unzipping the distributed `DualSense32-1.7.0.zip` gives you this:
 
 ```
 DualSense32/               ← use it as is

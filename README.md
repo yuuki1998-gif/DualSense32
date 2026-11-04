@@ -66,7 +66,7 @@ tell the two ports apart on your board, flash
 
 ## 2. Installing
 
-Unzip the release (`DualSense32-1.6.0.zip`) and move the whole `DualSense32`
+Unzip the release (`DualSense32-1.7.0.zip`) and move the whole `DualSense32`
 folder into the IDE's library directory:
 
 | OS | Path |
